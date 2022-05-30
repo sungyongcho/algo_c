@@ -10,7 +10,7 @@
         "-g",
         "${file}",
         "-o",
-        "${workspaceFolder}/${fileBasenameNoExtension}"
+        "${workspaceFolder}/sol"
       ],
       "options": {
         "cwd": "${fileDirname}"
