@@ -10,7 +10,7 @@
         "-g",
         "${file}",
         "-o",
-        "${fileDirname}/${fileBasenameNoExtension}"
+        "${workspaceFolder}/sol"
       ],
       "options": {
         "cwd": "${fileDirname}"
@@ -25,7 +25,7 @@
     {
       "type": "shell",
       "label": "execute",
-      "command": "${fileDirname}/${fileBasenameNoExtension} < input.txt",
+      "command": "${workspaceFolder}/sol < input.txt",
       "group": "test",
       "presentation": {
         "clear": true
