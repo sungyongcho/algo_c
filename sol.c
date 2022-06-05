@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   sol.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sucho <sucho@student.42.fr>                +#+  +:+       +#+        */
+/*   By: sucho <sucho@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 08:39:33 by sucho             #+#    #+#             */
-/*   Updated: 2022/06/05 03:01:27 by sucho            ###   ########.fr       */
+/*   Updated: 2022/06/05 19:47:31 by sucho            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,20 @@
 
 int main()
 {
-    int a, i, j;
+	int a, i, j;
 
-    scanf("%d", &a);
-    for(i = 0; i < a; i++)
-    {
-        for(j = 0; j < i ; j++ )
-            printf(" ");
-        while(j < a)
-        {
-            printf("*");
-            j++;
-        }
-        printf("\n");
-    }
-    return (0);
+	scanf("%d", &a);
+	for(i = 0; i < a; i++)
+	{
+		for(j = 0; j < i ; j++ )
+		printf(" ");
+		while(j < a)
+		{
+			printf("*");
+			j++;
+		}
+	printf("\n");
+	}
+
+	return (0);
 }
