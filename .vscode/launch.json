@@ -27,7 +27,12 @@
       "windows": {
         "MIMode": "gdb",
         "miDebuggerPath": "C:\\MinGw\\bin\\gdb.exe"
-      }
+      },
+      "setupCommands": [
+        {
+          "text": "settings set target.input-path ${fileDirname}/input.txt"
+        }
+      ]
     }
   ]
 }
