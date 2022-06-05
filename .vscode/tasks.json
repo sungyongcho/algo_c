@@ -10,19 +10,22 @@
         "-g",
         "${file}",
         "-o",
-        "${workspaceFolder}/sol"
+        "${fileDirname}/${fileBasenameNoExtension}"
       ],
       "options": {
         "cwd": "${fileDirname}"
       },
       "problemMatcher": ["$gcc"],
-      "group": "build",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
       "detail": "compiler: /usr/bin/clang"
     },
     {
       "type": "shell",
       "label": "execute",
-      "command": "${workspaceFolder}/sol < input.txt",
+      "command": "${fileDirname}/${fileBasenameNoExtension} < input.txt",
       "group": "test",
       "presentation": {
         "clear": true

@@ -6,14 +6,28 @@
 /*   By: sucho <sucho@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 08:39:33 by sucho             #+#    #+#             */
-/*   Updated: 2022/05/25 09:11:27 by sucho            ###   ########.fr       */
+/*   Updated: 2022/06/05 01:58:16 by sucho            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int main(int argc, char **argv)
+
+int main()
 {
-	printf("hello, world\n");
-	return (0);
+    int a, i, j;
+
+    scanf("%d", &a);
+    for(i = 0; i < a; i++)
+    {
+        for(j = 0; j < i ; j++ )
+            printf(" ");
+        while(j < a)
+        {
+            printf("*");
+            j++;
+        }
+        printf("\n");
+    }
+    return (0);
 }
