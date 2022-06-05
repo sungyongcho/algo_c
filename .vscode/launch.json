@@ -9,7 +9,7 @@
       "type": "cppdbg",
       "request": "launch",
       "program": "${workspaceFolder}/sol",
-      "args": [],
+      "args": ["<input.txt"],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
       "environment": [],
@@ -20,19 +20,6 @@
         "MIMode": "gdb",
         "miDebuggerPath": "/usr/bin/gdb"
       },
-      "osx": {
-        "preLaunchTask": "C/C++: clang build active file",
-        "MIMode": "lldb"
-      },
-      "windows": {
-        "MIMode": "gdb",
-        "miDebuggerPath": "C:\\MinGw\\bin\\gdb.exe"
-      },
-      "setupCommands": [
-        {
-          "text": "settings set target.input-path ${fileDirname}/input.txt"
-        }
-      ]
     }
   ]
 }
